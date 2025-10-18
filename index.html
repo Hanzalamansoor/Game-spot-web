@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game-Spot</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+    <style>
+        body {
+            background-color: #000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .section-box {
+            background-color: #1d1e20;
+            border: 3px solid #dc3545;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 3rem auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        .card-text {
+            color: #fff;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            color: #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+        <div class="container-fluid">
+            <i class="bi bi-controller fs-1 me-2"></i>
+            <a class="navbar-brand" href="#">GAME-SPOT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PC Gaming Shows</a></li>
+                            <li><a class="dropdown-item" href="#">Watch Trailers</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Games</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="container my-5" style="max-width: 900px;">
+        <h1 class="text-center text-light">Latest Games</h1>
+        <div id="gameCarousel" class="carousel slide border border-3 border-danger rounded mt-4"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="/img/Battlefield6.webp" class="d-block w-100" alt="Battlefield 6" />
+                    <div class="carousel-caption d-block">
+                        <h5>Battlefield 6</h5>
+                        <p>Huge buzz but a big gamble: Battlefield 6 takes aim at Call of Duty</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/img/gta6.webp" class="d-block w-100" alt="GTA 6" />
+                    <div class="carousel-caption d-block">
+                        <h5>GTA 6</h5>
+                        <p>GTA 6 New Trailer Reveal Approaching, Fans Mark Their Calendars</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/img/ghost.webp" class="d-block w-100" alt="Ghost of Tsushima" />
+                    <div class="carousel-caption d-block">
+                        <h5>Ghost of Tsushima</h5>
+                        <p>Fight as a Samurai in feudal Japan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="container section-box">
+        <h1 class="text-light">Sonic Racing: CrossWorlds – Better than Mario Kart?</h1>
+        <video class="w-100 rounded shadow js-player border border-3 border-warning mt-3" controls
+            poster="/img/sonic-racing-crossworlds-review_6rrh.1200.webp">
+            <source src="/img/Mario.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Spotlight Section -->
+    <div class="container section-box">
+        <h1 class="text-light">Spotlight</h1>
+        <div class="row g-3 mt-3">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/img/mouse-pi-for-hire-gameplay-trailer-highlights-hand-drawn-vis_e2rn.640.webp"
+                        class="card-img-top" alt="Mouse P.I." />
+                    <div class="card-body">
+                        <a href="">
+                            <p>Mouse: P.I. For Hire Gameplay Trailer Highlights Hand-Drawn Visuals...</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/img/the-witchers-final-seasons-liam-hemsworth-and-showrunner-lau_tgux.640.webp"
+                        class="card-img-top" alt="The Witcher" />
+                    <div class="card-body">
+                        <a href="">
+                            <p>The Witcher’s Final Seasons: Liam Hemsworth on Replacing Henry Cavill...
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/img/idxbox-and-ign-partner-for-october-showcase-heres-how-to-wat_7jfv.640.webp"
+                        class="card-img-top" alt="Xbox Showcase" />
+                    <div class="card-body">
+                        <p class="">ID@Xbox and IGN Partner for October Showcase: Here's How to Watch the Event
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script>
+        const player = new Plyr('.js-player');
+    </script>
+</body>
+
+</html>
